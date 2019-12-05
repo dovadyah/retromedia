@@ -1,8 +1,10 @@
 // animated smooth scroll
-$('#view-work').on('click', ()=>{
+const scroll = ()=>{
     const images = $('#images').position().top;
 
     $('html, body').animate({
         scrollTop: images
     }, 900);
-})
+}
+
+$('#view-work').on('click', scroll);
